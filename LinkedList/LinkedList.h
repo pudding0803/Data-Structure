@@ -7,10 +7,14 @@ template<typename T>
 class LinkedList {
 public:
     LinkedList();
-    void printList();
-    void insertNode(T, int);
+    int size();
+    void print();
+    T get(int);
+    void append(T);
+    void insert(T, int);
 private:
     Node<T> *head;
+    Node<T> *getNodeAtIndex(int);
 };
 
 #include "LinkedList.tpp"
